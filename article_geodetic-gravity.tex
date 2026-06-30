@@ -108,7 +108,7 @@ laboratories for this purpose. Decades of GNSS campaigns have mapped the westwar
 escape of the Anatolian microplate between the North and East Anatolian fault zones
 and its south-westward extrusion towards the Hellenic trench, yielding a
 present-day velocity field referenced to stable Eurasia
-\cite{McClusky2000,Reilinger2006,Nocquet2012,Kurt2023}. Building on these networks,
+\cite{Nocquet2012,Kurt2023}. Building on these networks,
 combined GNSS and Sentinel-1 InSAR analyses have produced continuous,
 high-resolution velocity and strain-rate fields for the whole of Anatolia, isolating
 the localised strain along the major strike-slip faults from the more diffuse
@@ -224,11 +224,11 @@ $26^{\circ}$ and $31^{\circ}$E and $36^{\circ}$ and $40.5^{\circ}$N. Its deforma
 is driven by two coupled processes: the westward escape of the Anatolian microplate
 between the North and East Anatolian fault zones, and the south-westward roll-back of
 the Hellenic subduction front, which together place the overriding Aegean lithosphere
-in tension \cite{McKenzie1972,Reilinger2006,Jackson1994,LePichonAngelier1979,Jolivet2013,Taymaz2007}. The combined
+in tension \cite{McKenzie1972,Jackson1994,LePichonAngelier1979,Jolivet2013,Taymaz2007}. The combined
 effect is rapid, broadly north--south extension at rates of the order of 20~mm/yr,
 accommodated by a dense network of predominantly east--west-trending normal faults
 that bound a family of elongated sedimentary basins
-\cite{Aktug2009,McClusky2000,SengorYilmaz1981,Bozkurt2001,TenVeen2009}. The most prominent of these are the Gediz
+\cite{Aktug2009,SengorYilmaz1981,Bozkurt2001,TenVeen2009}. The most prominent of these are the Gediz
 (Ala\c{s}ehir) and B\"{u}y\"{u}k Menderes grabens in the centre of the province, the
 K\"{u}\c{c}\"{u}k Menderes graben between them, and the Simav graben to the north,
 together with smaller basins such as the Denizli, \c{C}ivril and Acig\"{o}l
@@ -813,18 +813,18 @@ data.
 The predicted horizontal velocity field (Fig.~\ref{fig:velocity}) is referenced to a
 stable-Eurasia frame, so that each vector denotes the present-day motion of the
 overriding Aegean lithosphere relative to Eurasia rather than an absolute plate
-velocity \cite{McClusky2000,Reilinger2006,Kurt2023}. The vectors rotate from
+velocity \cite{McClusky2000,Kurt2023}. The vectors rotate from
 west-southwestward in the north to southwestward in the south, and their magnitude
 increases towards the southwest. This pattern is consistent with the superposition of
 two kinematic contributions: the westward extrusion of the Anatolian microplate along
 the North and East Anatolian fault zones, and the southwest-directed extension imposed
 by roll-back of the Hellenic subduction front, the contribution of which increases
-towards the trench \cite{McKenzie1972,LePichonAngelier1979,Reilinger2006,Nocquet2012,Jolivet2013}.
+towards the trench \cite{McKenzie1972,LePichonAngelier1979,Nocquet2012,Jolivet2013}.
 
 Predicted speeds increase from approximately $12$--$15$~mm\,yr$^{-1}$ in the northeast
 to $30$--$34$~mm\,yr$^{-1}$ near the Hellenic front, consistent with trench-normal
 extension accommodated across the graben system at bulk rates of the order of
-$20$~mm\,yr$^{-1}$ \cite{Aktug2009,McClusky2000,Taymaz2007}. The field is constrained by
+$20$~mm\,yr$^{-1}$ \cite{Aktug2009,Taymaz2007}. The field is constrained by
 GNSS station velocities at the millimetre-per-year level and densified by Sentinel-1
 InSAR line-of-sight measurements; its accuracy is governed by the internal consistency
 of the realised reference frame and by the spatial density of the geodetic network
@@ -886,7 +886,7 @@ stretching driven by roll-back of the Hellenic subduction front, superimposed on
 south-westward escape of the Anatolian microplate, is accommodated on the
 east--west-striking normal faults that bound the basins, so that the principal axis
 of stretching lies perpendicular to the corridors and the maximum shear strain
-localises along their margins \cite{McKenzie1972,LePichonAngelier1979,Reilinger2006,Jolivet2013}.
+localises along their margins \cite{McKenzie1972,LePichonAngelier1979,Jolivet2013}.
 Towards the eastern Aegean coast the two main corridors are linked across strike by a
 north-east-trending zone of moderate strain coincident with the \.{I}zmir--Bal\i
 kesir transfer zone, whose oblique, transtensional faulting relays extension between
@@ -972,7 +972,7 @@ spatial correspondence between the modelled zones of active crustal extension
 and the observed style of seismic deformation.
 
 \begin{figure}[htbp]\centering
-  %\includegraphics[width=0.95\textwidth]{fig11_strain_seismicity}
+	\includegraphics[width=0.95\textwidth]{fig11_strain_seismicity}
   \caption{Co-registered map of the predicted strain-rate field with overlaid
   instrumental seismicity (scaled by magnitude) and GCMT focal mechanisms, showing the
   spatial coincidence of modelled extension and seismic release. Software used for
@@ -984,6 +984,74 @@ Figure~\ref{fig:strain_seis} is the visual statement of this relationship, mappi
 predicted strain rate together with the seismicity and focal mechanisms. The strength
 and spatial structure of the association are quantified further in the validation and
 uncertainty analysis that follows.
+
+\subsection{GNSS velocity field}
+\label{sec:gnss}
+
+To characterise the present-day crustal kinematics of the Western Anatolian
+Extensional Province we compiled GNSS station velocities from the Nevada
+Geodetic Laboratory (NGL) global \texttt{MIDAS} solution
+\citep{blewitt2016midas}, which provides robust, outlier-insensitive secular
+velocities in the IGS14 (ITRF2014-aligned) reference frame. From the global
+solution we extracted all continuous stations within the study window
+(26--31\textdegree\,E, 36--40.5\textdegree\,N), yielding 50 sites, and within a
+padded box (24--33\textdegree\,E, 34--42\textdegree\,N) used to constrain the
+field margins, yielding 154 sites; reported $1\sigma$ horizontal uncertainties
+are typically $0.2$--$0.8~\mathrm{mm\,yr^{-1}}$ for sites with $>5$\,yr of data.
+
+To isolate intraplate deformation we rotated the velocities into a
+Eurasia-fixed frame by removing the rigid rotation predicted by the ITRF2014
+plate-motion model \citep{Altamimi2017}, whose Eurasia pole corresponds to an
+angular velocity vector
+\[
+(\omega_x,\omega_y,\omega_z)
+=
+(-0.085,\,-0.531,\,+0.770)\ \mathrm{mas\,yr^{-1}},
+\]
+i.e.\ an Euler pole located at
+\[
+\Phi \approx 55.07^\circ\mathrm{N}, \qquad
+\Lambda \approx 260.65^\circ\mathrm{E},
+\]
+with an angular rotation rate of
+\[
+\omega \approx 0.261^\circ\,\mathrm{Myr^{-1}}.
+\]
+An independent re-estimation using the ITRF2014 reference frame
+\citep{Jagoda2020} reproduces these values closely, yielding
+$\Phi = 54.81^\circ$, $\Lambda = 261.04^\circ$ and
+$\omega = 0.2585^\circ\,\mathrm{Ma^{-1}}$. The reduction is validated by the
+behaviour of stable-platform sites, which collapse to approximately zero
+velocity (e.g.\ ZONG: $-0.1$, $-0.1~\mathrm{mm\,yr^{-1}}$, given as east and
+north components), whereas Anatolian sites exhibit the expected
+westward--southwestward motion relative to Eurasia (e.g.\ ANKR:
+$23.5~\mathrm{mm\,yr^{-1}}$ westward; \.{I}ZM\.{I}R: $-22$,
+$-17~\mathrm{mm\,yr^{-1}}$).
+
+In the Eurasia-fixed frame the vectors are near-zero in the north (stable
+Anatolia/Eurasia) and grow to $\mathrm{ca.}~25$--$30~\mathrm{mm\,yr^{-1}}$
+toward the southwestern Aegean, rotating from W to SW and thereby illustrating
+the characteristic Western Anatolian extension-and-extrusion pattern
+(Fig.~\ref{fig:gnss_velocity}). This south-westward increase is consistent with
+the regional kinematics of the Anatolian--Aegean domain
+\citep{McClusky2000,briole2021aegean}, and the along-strike
+velocity gradients across the major E--W grabens reflect active N--S extension,
+in agreement with regional geodetic \citep{kurt2023turkey} and InSAR-derived
+\citep{weiss2020anatolia} strain-rate estimates. All maps were produced with
+the Generic Mapping Tools \citep{wessel2019gmt6}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{fig_gnss_velocity.pdf}
+  \caption{Eurasia-fixed GNSS horizontal velocities for the Western Anatolian
+  Extensional Province, derived from the NGL \texttt{MIDAS} IGS14 solution
+  \citep{blewitt2016midas} and reduced with the ITRF2014 plate-motion model
+  \citep{Altamimi2017}. Arrows are horizontal velocities (scale vector
+  $20~\mathrm{mm\,yr^{-1}}$, lower left); ellipses denote $1\sigma$
+  uncertainties. Magenta lines are active faults and purple lines the graben
+  axes. Shaded relief from GEBCO. Inset shows the regional setting.}
+  \label{fig:gnss_velocity}
+\end{figure}
 
 \subsection{Validation, comparison and uncertainty}\label{sec:compare}
 
@@ -999,6 +1067,7 @@ strain-rate field, the predicted values agree within
 $\pm8~\si{\nano\strain\per\year}$ over approximately 86\% of the study area,
 with the largest discrepancies confined primarily to the sediment-filled basin
 interiors and peripheral regions where the geodetic station density is lowest.
+
 The spatial uncertainty, estimated from the between-fold standard deviation of
 the cross-validation predictions, is lowest along the densely instrumented
 graben margins, where it is typically below
@@ -1069,7 +1138,7 @@ forest \cite{Friedman2001,ChenGuestrin2016,Lemenkova202518,Breiman2001,Bergen201
 The predicted velocity field and the broad strain pattern agree with the GNSS-based
 picture of Aegean kinematics, in which roughly north--south extension increases towards
 the Hellenic front and is taken up across the graben system
-\cite{McClusky2000,Aktug2009,England2016,Walters2011,Hussain2016,Cakir2005,McNab2018,Floyd2010}. The continuum interpretation
+\cite{Aktug2009,England2016,Walters2011,Hussain2016,Cakir2005,McNab2018,Floyd2010}. The continuum interpretation
 supported here aligns with the conclusion of Aktug et al. that strain rates in the
 interiors of proposed crustal blocks in western Anatolia are too high for rigid-block
 behaviour, and with the distributed deformation imaged by region-wide InSAR
