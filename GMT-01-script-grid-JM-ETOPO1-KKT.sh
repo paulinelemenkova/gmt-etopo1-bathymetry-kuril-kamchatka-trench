@@ -1,4 +1,13 @@
 #!/bin/sh
+# -----------------------------------------------------------------------------
+# GMT Shaded-Relief Bathymetry of the Kuril-Kamchatka Trench from ETOPO1
+#
+# Author:  Polina Lemenkova
+# ORCID:   https://orcid.org/0000-0002-5759-1089
+# Paper:   Lemenkova, P. (2019). Topographic surface modelling using raster grid datasets by GMT: example of the Kuril-Kamchatka Trench, Pacific Ocean. Reports on Geodesy and Geoinformatics, 108, 9-22. ISSN 2391-8365.
+# DOI:     https://doi.org/10.2478/rgg-2019-0008
+# License: MIT (see LICENSE)
+# -----------------------------------------------------------------------------
 # Purpose: shaded relief grid raster map from the ETOPO1 from 1 arc minute global data set (here: Kuril-Kamchatka Trench)
 # GMT modules: gmtset, grdcut, makecpt, grdimage, psscale, grdcontour, psbasemap, gmtlogo, psconvert
 # Step-1. Generate a file
